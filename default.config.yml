@@ -8,12 +8,7 @@ configure_osx: false
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
 dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
 dockitems_persist: []
-# - name: "Sublime Text"
 #   path: "/Applications/Sublime Text.app/"
 #   pos: 5
 
@@ -35,53 +30,53 @@ dotfiles_files:
   - .vimrc
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
   - autoconf
+  - azure-cli
   - bash-completion
-  # - doxygen
-  # - gettext
-  # - gifsicle
+  - bat
+  - chezmoi
+  - dog
+  - fish
   - git
   - github/gh/gh
   - go
   - gpg
   - httpie
   - iperf
-  # - libevent
-  # - sqlite
-  # - mcrypt
+  - jq
+  - lazygit
   - nmap
-  # - node
-  # - nvm
-  # - php
-  - ssh-copy-id
-  # - cowsay
-  - readline
   - openssl
-  # - pv
+  - ssh-copy-id
+  - readline
+  - starship
+  - tfenv
+  - tgenv
+  - tmux
   - wget
-  # - wrk
+  - yq
   - zsh-history-substring-search
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-#  - chromedriver
+  - alacritty
+  - alfred
+  - chromedriver
   - docker
-#  - dropbox
-#  - firefox
-#  - google-chrome
-#  - handbrake
-#  - licecap
-#  - sequel-ace
-#  - slack
-#  - sublime-text
-#  - transmit
+  - font-fira-code
+  - iterm2
+  - google-chrome
+  - microsoft-office
+  - slack
+  - telegram
   - vagrant
   - visual-studio-code
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -94,19 +89,15 @@ osx_script: "~/.osx --no-restart"
 # Note: You are responsible for making sure the required package managers are
 # installed, eg. through homebrew.
 composer_packages: []
-# - name: drush
 #   state: present # present/absent, default: present
 #   version: "^8.1" # default: N/A
 gem_packages: []
-# - name: bundler
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
 npm_packages: []
-# - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
 pip_packages: []
-# - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
 
