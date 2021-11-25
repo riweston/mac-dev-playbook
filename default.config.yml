@@ -69,6 +69,7 @@ homebrew_cask_apps:
   - chromedriver
   - docker
   - font-fira-code
+  - font-hack-nerd-font
   - iterm2
   - google-chrome
   - microsoft-office
